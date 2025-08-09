@@ -219,6 +219,29 @@
             cursor: url('anoma_images/anoma_cursor.png') 16 16, pointer;
         }
         
+        .creator-label {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-family: 'Bubblegum Sans', cursive;
+            font-size: 0.9rem;
+            color: white;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 6px 12px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 20;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .creator-label:hover {
+            opacity: 1;
+            transform: scale(1.05);
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
         .questions-section {
             position: fixed;
             top: 50%;
@@ -586,6 +609,7 @@
 </head>
 <body>
     <canvas id="bgCanvas"></canvas>
+    <div class="creator-label">made by: @donutlover8595</div>
     <button class="dark-mode-toggle" id="darkModeToggle">Dark Mode</button>
     
     <div class="main-container">
